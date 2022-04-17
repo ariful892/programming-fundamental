@@ -2,43 +2,43 @@
     {
         "id": 1,
         "name": "Structured Programming",
-        "description": "",
-        "picture": "http://placehold.it/32x32",
-        "price": ""
+        "description": "Structured programming is a subset of procedural programming. It is also known as modular programming. It is a logical programming method that is considered a precursor to object-oriented programming (OOP).",
+        "picture": "https://i.ibb.co/SwQ2n5J/sp.png",
+        "price": 120
     },
     {
         "id": 2,
-        "name": "Sondra Jenkins",
-        "description": "",
-        "picture": "http://placehold.it/32x32",
-        "price": ""
+        "name": "Data Structure",
+        "description": "A data structure is a way of organizing the data so that it can be used efficiently. Here, we have used the word efficiently, which in terms of both the space and time.",
+        "picture": "https://i.ibb.co/XydyJLc/ds.png",
+        "price": 140
     },
     {
         "id": 3,
-        "name": "Coffey Glass",
-        "description": "",
-        "picture": "http://placehold.it/32x32",
-        "price": ""
+        "name": "Object Oriented Programming",
+        "description": "Object-oriented programming ( OOP) is a programming paradigm based on the concept of 'objects', which can contain data and code: data in the form of fields (often known as attributes or properties ), and code, in the form of procedures (often known as methods ).",
+        "picture": "https://i.ibb.co/ngxB1D9/oop.png",
+        "price": 180
     },
     {
         "id": 4,
-        "name": "Perry Baldwin",
-        "description": "",
-        "picture": "http://placehold.it/32x32",
-        "price": ""
+        "name": "Algorithm",
+        "description": "an algorithm is a set of well-defined steps or rules that you need to follow to obtain a pre-determined result. For instance, when we talk about algorithms in computer programming, we already have our input and we know the expected output.",
+        "picture": "https://i.ibb.co/Tcqgz9N/algo.png",
+        "price": 170
     },
     {
         "id": 5,
-        "name": "Noelle Kerr",
-        "description": "",
-        "picture": "http://placehold.it/32x32",
-        "price": ""
+        "name": "Database Management System",
+        "description": "A database management system (or DBMS) is essentially nothing more than a computerized data-keeping system. Users of the system are given facilities to perform several kinds of operations on such a system for either manipulation of the data in the database or the management of the database structure itself.",
+        "picture": "https://i.ibb.co/qWRwrXC/database.png",
+        "price": 150
     },
     {
         "id": 6,
-        "name": "Kemp Campos",
-        "description": "",
-        "picture": "http://placehold.it/32x32",
-        "price": ""
+        "name": "Software  Engineering",
+        "description": "Software engineering is the systematic application of engineering approaches to the development of software. Software engineering is a computing discipline.",
+        "picture": "https://i.ibb.co/dQV4SgB/software.png",
+        "price": 175
     }
 ]
