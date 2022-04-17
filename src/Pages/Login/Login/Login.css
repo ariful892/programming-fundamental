@@ -1,0 +1,48 @@
+.form-container {
+    text-align: center;
+    width: 450px;
+    height: 650px;
+    margin: 0 auto;
+    border: 1px solid #95A0A7;
+    border-radius: 10px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    box-shadow: 3px 3px 0 2px rgb(17, 7, 155);
+}
+
+.login-title {
+    font-size: 40px;
+    color: rgb(17, 7, 155);
+    margin-top: 10px;
+}
+
+.input-group {
+    width: 100%;
+    display: block;
+}
+
+.input-group input:not([type=checkbox]) {
+    width: 80%;
+    height: 40px;
+    font-size: 15px;
+    padding-left: 5px;
+    margin-bottom: 18px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.form-btn {
+    background-color: rgb(17, 7, 155);
+    color: white;
+}
+
+.form-btn:hover {
+    background-color: rgb(90, 80, 240);
+    color: white;
+}
+
+.form-link {
+    color: #FF9900;
+    text-decoration: none;
+}

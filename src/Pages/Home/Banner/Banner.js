@@ -10,7 +10,7 @@ import banner4 from '../../../images/banner/banner4.png';
 const Banner = () => {
     return (
         <div className='mt-3'>
-            <h1 className='text-center fs-1 mb-4'>Programming Fundamental</h1>
+            <h1 className='text-center fs-1 mb-4'>Programming <span className='text-warning'>Fundamental</span></h1>
             <Carousel>
                 <Carousel.Item>
                     <img
@@ -42,7 +42,7 @@ const Banner = () => {
                         alt="Third slide"
                     />
 
-                    <Carousel.Caption>
+                    <Carousel.Caption className='text-success fw-bold'>
                         <h3>Patience</h3>
                         <p>Don't loose hope. You will shine one day.</p>
                     </Carousel.Caption>
@@ -54,7 +54,7 @@ const Banner = () => {
                         alt="Second slide"
                     />
 
-                    <Carousel.Caption>
+                    <Carousel.Caption className='text-success fw-bold'>
                         <h3>Belief</h3>
                         <p>Keep belief on yourself. You can do it.</p>
                     </Carousel.Caption>
