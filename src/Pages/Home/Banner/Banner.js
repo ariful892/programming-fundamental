@@ -10,7 +10,7 @@ import banner4 from '../../../images/banner/banner4.png';
 const Banner = () => {
     return (
         <div className='mt-3'>
-            <h1 className='text-center fs-1 mb-3'>Programming Fundamental</h1>
+            <h1 className='text-center fs-1 mb-4'>Programming Fundamental</h1>
             <Carousel>
                 <Carousel.Item>
                     <img
@@ -19,8 +19,8 @@ const Banner = () => {
                         alt="First slide"
                     />
                     <Carousel.Caption>
-                        <h3>First slide label</h3>
-                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                        <h3>Hardwork</h3>
+                        <p>Do the hardwork now you will get the result by the end of the day.</p>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
@@ -31,8 +31,8 @@ const Banner = () => {
                     />
 
                     <Carousel.Caption>
-                        <h3>Second slide label</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <h3>Focused</h3>
+                        <p>Keep focus on your track.</p>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
@@ -43,8 +43,8 @@ const Banner = () => {
                     />
 
                     <Carousel.Caption>
-                        <h3>Third slide label</h3>
-                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                        <h3>Patience</h3>
+                        <p>Don't loose hope. You will shine one day.</p>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
@@ -55,8 +55,8 @@ const Banner = () => {
                     />
 
                     <Carousel.Caption>
-                        <h3>Second slide label</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                        <h3>Belief</h3>
+                        <p>Keep belief on yourself. You can do it.</p>
                     </Carousel.Caption>
                 </Carousel.Item>
             </Carousel>

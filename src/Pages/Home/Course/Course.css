@@ -1,0 +1,42 @@
+.course {
+    width: 400px;
+    height: 600px;
+    border: 1px solid lightgray;
+    position: relative;
+    text-align: center;
+    padding-top: 10px;
+    border-radius: 7px;
+}
+
+.course img {
+    width: 350px;
+    border-radius: 7px;
+}
+
+.course-title {
+    font-size: 28px;
+    margin-top: 5px;
+}
+
+.course-price {
+    margin: 0;
+    font-size: 25px;
+}
+
+.course-description {
+    margin-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.course-btn {
+    border: none;
+    color: white;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    left: 0;
+    border-radius: 0 0 7px 7px;
+}
