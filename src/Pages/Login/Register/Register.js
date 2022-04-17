@@ -6,6 +6,7 @@ import auth from '../../../firebase.init';
 
 import './Register.css';
 import { async } from '@firebase/util';
+import Loading from '../../Shared/Loading/Loading';
 
 
 const Register = () => {
@@ -20,6 +21,7 @@ const Register = () => {
     const [updateProfile, updating, updateError] = useUpdateProfile(auth);
     const [errorElement, setErrorElement] = useState('');
     const navigate = useNavigate();
+
 
 
     if (user) {
