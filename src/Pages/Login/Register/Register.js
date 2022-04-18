@@ -17,7 +17,7 @@ const Register = () => {
         user,
         loading,
         error,
-    ] = useCreateUserWithEmailAndPassword(auth);
+    ] = useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true });
     const [updateProfile, updating, updateError] = useUpdateProfile(auth);
     const [errorElement, setErrorElement] = useState('');
     const navigate = useNavigate();
@@ -60,7 +60,7 @@ const Register = () => {
                 {errorElement}
                 <div className='d-block mt-0 pt-0'>
                     <input onClick={() => setAgree(!agree)} type="checkbox" name="terms" id="terms" />
-                    <label className={`ps-2 pt-0 ${agree ? 'text-success' : 'text-danger'} `} htmlFor="terms">Accept Genius Car Terms and Conditions</label>
+                    <label className={`ps-2 pt-0 ${agree ? 'text-success' : 'text-danger'} `} htmlFor="terms">Accept Programming Fundamentals Terms and Conditions</label>
                 </div>
                 <input disabled={!agree} className='form-btn mt-2' type="submit" value="Register" />
             </form>

@@ -25,6 +25,7 @@ const Header = () => {
                     <Nav className="me-auto">
                         <Nav.Link className='text-warning' as={Link} to='/home'>Home</Nav.Link>
                         <Nav.Link className='text-warning' href="home#experts">Courses</Nav.Link>
+                        <Nav.Link className='text-warning' as={Link} to='/checkout'>Checkout</Nav.Link>
                     </Nav>
                     <Nav>
                         <Nav.Link className='text-warning' as={Link} to='/blogs'>Blogs</Nav.Link>
