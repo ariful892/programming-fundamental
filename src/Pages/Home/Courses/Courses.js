@@ -6,8 +6,8 @@ import './Courses.css';
 const Courses = () => {
     const { courses } = useCourses();
     return (
-        <div className='courses-container'>
-            <h2 className='text-center mb-5'>COURSES</h2>
+        <div id='courses' className='courses-container'>
+            <h2 className='title text-center mb-5'>COURSES</h2>
             <div className="courses">
                 {
                     courses.map(course => <Course

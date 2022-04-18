@@ -1,7 +1,7 @@
 import React from 'react';
 import { ToastContainer } from 'react-bootstrap';
 import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useNavigate, useLocation } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import auth from '../../../firebase.init';
 import Loading from '../../Shared/Loading/Loading';
@@ -18,7 +18,10 @@ const Login = () => {
     ] = useSignInWithEmailAndPassword(auth);
     const [sendPasswordResetEmail, sending] = useSendPasswordResetEmail(auth);
     const navigate = useNavigate();
+    const location = useLocation();
     let errorElement;
+
+    const from = location.state?.from?.pathname || "/";
 
     if (error) {
         errorElement = <p className='text-danger'>Error: {error?.message}</p>
@@ -29,7 +32,7 @@ const Login = () => {
     }
 
     if (user) {
-        navigate('/home');
+        navigate(from, { replace: true });
     }
 
     const handleLogin = event => {
@@ -52,7 +55,7 @@ const Login = () => {
 
     return (
         <div className='form-container'>
-            <h2 className='login-title'>Login</h2>
+            <h2 className='title'>Login</h2>
             <SocialLogin></SocialLogin>
             <form className='input-group' onSubmit={handleLogin}>
                 <input type="email" name="email" id="" placeholder='Your Email' required />

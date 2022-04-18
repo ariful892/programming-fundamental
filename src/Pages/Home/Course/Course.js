@@ -1,9 +1,15 @@
 import React from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 import './Course.css';
 
 const Course = ({ course }) => {
 
-    const { name, description, picture, price } = course;
+    const { id, name, description, picture, price } = course;
+    const navigate = useNavigate();
+
+    const navigateToCourseBook = () => {
+        navigate(`/course/${id}`);
+    }
 
     return (
         <div className='course'>
@@ -11,7 +17,7 @@ const Course = ({ course }) => {
             <h3 className='course-title'>{name}</h3>
             <p className='course-price'>${price}</p>
             <p className='course-description'>{description}</p>
-            <button className='course-btn'>BOOK THIS COURSE</button>
+            <Link onClick={() => navigateToCourseBook(id)} className='course-btn' to='/coursebook'>BOOK THIS COURSE</Link>
         </div>
     );
 };

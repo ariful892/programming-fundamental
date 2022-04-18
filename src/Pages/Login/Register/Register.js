@@ -50,7 +50,7 @@ const Register = () => {
 
     return (
         <div className='form-container'>
-            <h2 className='login-title'>Register</h2>
+            <h2 className='title'>Register</h2>
             <SocialLogin></SocialLogin>
             <form className='input-group' onSubmit={handleRegister}>
                 <input type="text" name="name" id="" placeholder='Your Name' required />

@@ -4,6 +4,9 @@ import { useNavigate } from 'react-router-dom';
 import auth from '../../../firebase.init';
 import Loading from '../../Shared/Loading/Loading';
 
+import google from '../../../images/social/google.jpg';
+import github from '../../../images/social/github.png';
+
 const SocialLogin = () => {
 
     const [signInWithGoogle, googleUser, googleLoading, googleError] = useSignInWithGoogle(auth);
@@ -29,14 +32,14 @@ const SocialLogin = () => {
                 <button
                     onClick={() => signInWithGoogle()}
                     className='btn btn-warning w-50 d-block mx-auto my-3'>
-                    <img height={20} src="" alt=''></img>
+                    <img height={20} src={google} alt=''></img>
                     <span className='ps-2'>Continue With Google</span>
                 </button>
 
                 <button
                     onClick={() => signInWithGithub()}
                     className='btn btn-dark w-50 d-block mx-auto my-2'>
-                    <img height={20} className='me-3' src="" alt=''></img>
+                    <img height={19} src={github} alt=''></img>
                     <span className='ps-2'>Continue With Github</span>
                 </button>
             </div>

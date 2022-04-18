@@ -1,9 +1,13 @@
 import React from 'react';
+import { useParams } from 'react-router-dom';
 
 const CourseBook = () => {
+
+    const { courseId } = useParams();
+
     return (
         <div>
-            <h2>Course Booking</h2>
+            <h2>Course Booking: {courseId}</h2>
         </div>
     );
 };
