@@ -10,7 +10,7 @@ import banner4 from '../../../images/banner/banner4.png';
 const Banner = () => {
     return (
         <div className='mt-3'>
-            <h1 className='text-center fs-1 mb-4'>Programming <span className='title'>Fundamental</span></h1>
+            <h1 className='text-center fs-1 mb-4'>PROGRAMMING <span className='title'>FUNDAMENTAL</span></h1>
             <Carousel>
                 <Carousel.Item>
                     <img

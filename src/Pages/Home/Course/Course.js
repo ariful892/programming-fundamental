@@ -17,7 +17,7 @@ const Course = ({ course }) => {
             <h3 className='course-title'>{name}</h3>
             <p className='course-price'>${price}</p>
             <p className='course-description'>{description}</p>
-            <Link onClick={() => navigateToCourseBook(id)} className='course-btn' to='/coursebook'>BOOK THIS COURSE</Link>
+            <Link onClick={() => navigateToCourseBook(id)} className='course-btn' to='/checkout'>BOOK THIS COURSE</Link>
         </div>
     );
 };

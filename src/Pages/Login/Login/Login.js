@@ -1,8 +1,8 @@
-import React from 'react';
-import { ToastContainer } from 'react-bootstrap';
+import React, { useRef } from 'react';
 import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
-import { toast } from 'react-toastify';
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import auth from '../../../firebase.init';
 import Loading from '../../Shared/Loading/Loading';
 import SocialLogin from '../SocialLogin/SocialLogin';
@@ -17,6 +17,8 @@ const Login = () => {
         error,
     ] = useSignInWithEmailAndPassword(auth);
     const [sendPasswordResetEmail, sending] = useSendPasswordResetEmail(auth);
+    const emailRef = useRef('');
+    const passwordRef = useRef('');
     const navigate = useNavigate();
     const location = useLocation();
     let errorElement;
@@ -36,14 +38,14 @@ const Login = () => {
     }
 
     const handleLogin = event => {
-        const email = event.target.email.value;
-        const password = event.target.password.value;
+        const email = emailRef.current.value;
+        const password = passwordRef.current.value;
 
         signInWithEmailAndPassword(email, password);
     }
 
-    const resetPassword = async (event) => {
-        const email = event.target.email.value;
+    const resetPassword = async () => {
+        const email = emailRef.current.value;
         if (email) {
             await sendPasswordResetEmail(email);
             toast('Sent email');
@@ -58,8 +60,8 @@ const Login = () => {
             <h2 className='title'>Login</h2>
             <SocialLogin></SocialLogin>
             <form className='input-group' onSubmit={handleLogin}>
-                <input type="email" name="email" id="" placeholder='Your Email' required />
-                <input type="password" name="password" id="" placeholder='Password' required />
+                <input ref={emailRef} type="email" name="email" id="" placeholder='Your Email' required />
+                <input ref={passwordRef} type="password" name="password" id="" placeholder='Password' required />
                 <input className='form-btn' type="submit" value="Login" />
             </form>
             {errorElement}
@@ -67,7 +69,7 @@ const Login = () => {
                 <Link className='form-link' to='/register'>Please Register</Link>
             </p>
             <p className='mt-2'>Forget Password?<button className='ps-0 btn btn-link text-warning pe-auto text-decoration-none' onClick={resetPassword}>Reset Password</button></p>
-            <ToastContainer />
+            <ToastContainer></ToastContainer>
         </div>
     );
 };
