@@ -7,7 +7,7 @@ const Course = ({ course }) => {
     const { id, name, description, picture, price } = course;
     const navigate = useNavigate();
 
-    const navigateToCourseBook = () => {
+    const navigateToCheckout = () => {
         navigate(`/course/${id}`);
     }
 
@@ -17,7 +17,7 @@ const Course = ({ course }) => {
             <h3 className='course-title'>{name}</h3>
             <p className='course-price'>${price}</p>
             <p className='course-description'>{description}</p>
-            <Link onClick={() => navigateToCourseBook(id)} className='course-btn' to='/checkout'>BOOK THIS COURSE</Link>
+            <button onClick={() => navigateToCheckout(id)} className='course-btn' >BOOK THIS COURSE</button>
         </div>
     );
 };

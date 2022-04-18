@@ -22,13 +22,12 @@ function App() {
       <Routes>
         <Route path='/' element={<Home></Home>}></Route>
         <Route path='/home' element={<Home></Home>}></Route>
-        <Route path='/course/:courseId' element={<CourseBook></CourseBook>}></Route>
         <Route path='/advanced' element={
           <RequireAuth>
             <Advanced></Advanced>
           </RequireAuth>}>
         </Route>
-        <Route path='/checkout' element={
+        <Route path='/course/:courseId' element={
           <RequireAuth>
             <Checkout></Checkout>
           </RequireAuth>

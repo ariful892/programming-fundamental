@@ -15,7 +15,7 @@ const Checkout = () => {
 
     return (
         <div style={{ height: '450px' }} className='form-container'>
-            <h2 className='title'>Course Booking</h2>
+            <h2 className='title'>Checkout</h2>
             <form className='input-group' onSubmit={handleSubmit} >
                 <input type="text" name="name" id="" placeholder='Your Name' required />
                 <input type="text" name="email" id="" defaultValue={user.email} />
