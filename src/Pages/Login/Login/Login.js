@@ -68,7 +68,7 @@ const Login = () => {
             <p className='m-0'>New to Programming Fundamentals?
                 <Link className='form-link' to='/register'>Please Register</Link>
             </p>
-            <p className='mt-2'>Forget Password?<button className='ps-0 btn btn-link text-warning pe-auto text-decoration-none' onClick={resetPassword}>Reset Password</button></p>
+            <p className='mt-2'>Forget Password?<button className='reset-btn ' onClick={resetPassword}>Reset Password</button></p>
             <ToastContainer></ToastContainer>
         </div>
     );

@@ -40,7 +40,7 @@ const SocialLogin = () => {
                     onClick={() => signInWithGithub()}
                     className='btn btn-dark w-50 d-block mx-auto my-2'>
                     <img height={19} src={github} alt=''></img>
-                    <span className='ps-2'>Continue With Github</span>
+                    <span className='ps-2'>Continue With GitHub</span>
                 </button>
             </div>
             {errorElement}

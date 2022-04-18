@@ -1,6 +1,6 @@
 # Programming Fundamentals
 
-## The website live link (https://computer-hut-ariful892.netlify.app/
+## The website live link (
 )
 
 ## Features and functionality
