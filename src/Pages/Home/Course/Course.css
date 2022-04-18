@@ -8,6 +8,10 @@
     border-radius: 7px;
 }
 
+.course:hover {
+    background-color: rgb(216, 242, 216);
+}
+
 .course img {
     width: 350px;
     border-radius: 7px;

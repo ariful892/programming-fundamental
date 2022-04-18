@@ -1,12 +1,12 @@
-# Computer Hut
+# Programming Fundamentals
 
 ## The website live link (https://computer-hut-ariful892.netlify.app/
 )
 
 ## Features and functionality
 
-- It a single page application.
-- There are 5 routes in this application.
+- It's a single page application.
+- There are 8 pages in this application.
 - In Home page there are 3 section. Website title and banner, Courses section and other is speciality section.
 - Header and Footer are kept as shared component which are shared in every pages.
 - Checkout and Advanced page are kept in protected route user have to login to the website to view those page.
