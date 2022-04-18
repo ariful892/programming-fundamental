@@ -2,22 +2,22 @@
     {
         "id": 7,
         "name": "Artificial Intelligence",
-        "description": "Structured programming is a subset of procedural programming. It is also known as modular programming. It is a logical programming method that is considered a precursor to object-oriented programming (OOP).",
-        "picture": "https://i.ibb.co/SwQ2n5J/sp.png",
+        "description": "Artificial intelligence (AI) is intelligence demonstrated by machines, as opposed to the natural intelligence displayed by animals including humans. Leading AI textbooks define the field as the study of 'intelligent agents'.",
+        "picture": "https://i.ibb.co/HTDC3Sc/ai.png",
         "price": 280
     },
     {
         "id": 8,
         "name": "Machine Learning",
-        "description": "A data structure is a way of organizing the data so that it can be used efficiently. Here, we have used the word efficiently, which in terms of both the space and time.",
-        "picture": "https://i.ibb.co/XydyJLc/ds.png",
+        "description": "Machine learning is a branch of artificial intelligence (AI) and computer science which focuses on the use of data and algorithms to imitate the way that humans learn, gradually improving its accuracy.",
+        "picture": "https://i.ibb.co/qxhknZq/ml.png",
         "price": 260
     },
     {
         "id": 9,
         "name": "Pattern Recognition",
-        "description": "Object-oriented programming ( OOP) is a programming paradigm based on the concept of 'objects', which can contain data and code: data in the form of fields (often known as attributes or properties ), and code, in the form of procedures (often known as methods ).",
-        "picture": "https://i.ibb.co/ngxB1D9/oop.png",
+        "description": "Pattern Recognition is a mature but exciting and fast developing field, which underpins developments in cognate fields such as computer vision, image processing, text and document analysis and neural networks.",
+        "picture": "https://i.ibb.co/93Qtnnh/pr.png",
         "price": 240
     }
 ]

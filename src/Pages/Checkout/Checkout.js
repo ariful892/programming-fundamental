@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
 import Course from '../Home/Course/Course';
 
 
@@ -14,7 +13,7 @@ const Checkout = () => {
 
     return (
         <div id='courses' className='courses-container'>
-            <h2 className='title text-center mb-5'>COURSES</h2>
+            <h2 className='title text-center mb-5'>SPECIAL COURSES</h2>
             <div className="courses">
                 {
                     specialCourses.map(course => <Course
