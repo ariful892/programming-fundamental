@@ -3,7 +3,6 @@ import { Link, useNavigate } from 'react-router-dom';
 import SocialLogin from '../SocialLogin/SocialLogin';
 import { useCreateUserWithEmailAndPassword, useUpdateProfile } from 'react-firebase-hooks/auth';
 import auth from '../../../firebase.init';
-
 import './Register.css';
 import { async } from '@firebase/util';
 import Loading from '../../Shared/Loading/Loading';
@@ -22,7 +21,9 @@ const Register = () => {
     const [errorElement, setErrorElement] = useState('');
     const navigate = useNavigate();
 
-
+    if (loading || updating) {
+        return <Loading></Loading>
+    }
 
     if (user) {
         console.log('user', user);

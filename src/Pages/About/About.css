@@ -1,0 +1,27 @@
+.about {
+    width: 450px;
+    height: 700px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: rgb(231, 231, 247);
+    margin-top: 70px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 0 2px rgb(17, 7, 155);
+}
+
+.about img {
+    margin-top: 30px;
+    border-radius: 50%;
+}
+
+.about p {
+    margin-top: 15px;
+    text-align: justify;
+    color: blue;
+    padding: 15px;
+}
+
+.name {
+    font-weight: 600;
+}
